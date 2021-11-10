@@ -1,0 +1,15 @@
+local XanaxUILib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Isaac708/Source/main/Source"))()
+local Ui = XanaxUILib:CreateWindow("HUB")
+local Info = Ui:CreateSection("Info")
+local ShindoLife = Ui:CreateSection("Shindo Life")
+local BloxFruit = Ui:CreateSection("Blox Fruit")
+
+Info:CreateLabel("Made by Isaac")
+Info:CreateLabel("ONI-H")
+Info:CreateButton("Destroy UI", function() XanaxUILib.functions:DestroyGUI() end)
+
+ShindoLife:CreateLabel("More Scripts Coming Soon..")
+ShindoLife:CreateButton("Snxw Hub Old", function() loadstring(game:HttpGet("https://snxwhub.xyz/scripts/oldVersion.lua"))() end)
+ShindoLife:CreateSlider("Walkspeed", "WalkSpeed", 16, 100, false, function(ws)
+   game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = ws
+end)    
