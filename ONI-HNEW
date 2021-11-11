@@ -3,20 +3,30 @@ local Ui = XanaxUILib:CreateWindow("ONI-H")
 local Info = Ui:CreateSection("Info")
 local ShindoLife = Ui:CreateSection("Shindo Life")
 local BloxFruit = Ui:CreateSection("Blox Fruit")
+local Misc = Ui:CreateSection("Misc")
+local PetX = Ui:CreateSection("Pet X")
+local BedWars = Ui:CreateSection("Bed Wars")
 
 Info:CreateLabel("Made by Isaac")
 Info:CreateLabel("ONI-H Premium")
-Info:CreateLabel("Thank you for supportng us! I hope you can shit their game with it. If you have any problem, contact mods.")
+Info:CreateLabel("Thank you for Supporting!")
 Info:CreateButton("Destroy UI", function() XanaxUILib.functions:DestroyGUI() end)
 
 ShindoLife:CreateLabel("More Scripts Coming Soon..")
 ShindoLife:CreateButton("Snxw Hub Old", function() loadstring(game:HttpGet("https://snxwhub.xyz/scripts/oldVersion.lua"))() end)
-ShindoLife:CreateSlider("Walkspeed", "WalkSpeed", 16, 100, false, function(ws)
+
+
+BloxFruit:CreateLabel("More Scripts Coming Soon..")
+BloxFruit:CreateButton("Night Hub", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/NightsTimeZ/Night_Script/main/BloxFruit.lua"))() end)
+
+Misc:CreateLabel("Features")
+Misc:CreateButton("IY Admin", function () loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))() end)
+Misc:CreateSlider("Walkspeed", "Walkspeed", 16, 100, false, function (ws)
    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = ws
 end)
 
-BloxFruit:CreateLabel("New Update Patched All Scripts And Only 1 Available :(")
-BloxFruit:CreateSlider("Walkspeed", "Walkspeed", 16, 100, false, function (ws)
-   game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = ws
-end)
-BloxFruit:CreateButton("Night Hub", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/NightsTimeZ/Night_Script/main/BloxFruit.lua"))() end)
+PetX:CreateLabel("More Scripts Coming Soon..")
+PetX:CreateButton("Ryans UI", function () loadstring(game:HttpGet('https://raw.githubusercontent.com/ScriptRUs/Ryans/main/PetSimulatorXAutofarm.lua'))() end)
+
+BedWars:CreateLabel("More Scripts Coming Soon..")
+BedWars:CreateButton("VapeV4", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))() end)
