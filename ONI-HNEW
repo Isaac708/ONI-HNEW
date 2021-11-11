@@ -26,7 +26,7 @@ Misc:CreateSlider("Walkspeed", "Walkspeed", 16, 100, false, function (ws)
 end)
 
 PetX:CreateLabel("More Scripts Coming Soon..")
-PetX:CreateButton("Ryans UI", function () loadstring(game:HttpGet('https://raw.githubusercontent.com/ScriptRUs/Ryans/main/PetSimulatorXAutofarm.lua'))() end)
+PetX:CreateButton("DHX UI", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/si1nnx/psxx/main/g"))() end)
 
 BedWars:CreateLabel("More Scripts Coming Soon..")
 BedWars:CreateButton("VapeV4", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))() end)
