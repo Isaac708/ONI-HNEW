@@ -18,6 +18,7 @@ ShindoLife:CreateButton("Snxw Hub Old", function() loadstring(game:HttpGet("http
 
 BloxFruit:CreateLabel("More Scripts Coming Soon..")
 BloxFruit:CreateButton("Night Hub", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/NightsTimeZ/Night_Script/main/BloxFruit.lua"))() end)
+BloxFruit:CreateButton("Mokuro Hub", function () loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/BloxFruit.lua")() end)
 
 Misc:CreateLabel("Features")
 Misc:CreateButton("IY Admin", function () loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))() end)
@@ -26,7 +27,7 @@ Misc:CreateSlider("Walkspeed", "Walkspeed", 16, 100, false, function (ws)
 end)
 
 PetX:CreateLabel("More Scripts Coming Soon..")
-PetX:CreateButton("DHX UI", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/si1nnx/psxx/main/g"))() end)
+PetX:CreateButton("Ryans UI", function () loadstring(game:HttpGet('https://raw.githubusercontent.com/ScriptRUs/Ryans/main/PetSimulatorXAutofarm.lua'))() end)
 
 BedWars:CreateLabel("More Scripts Coming Soon..")
 BedWars:CreateButton("VapeV4", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))() end)
