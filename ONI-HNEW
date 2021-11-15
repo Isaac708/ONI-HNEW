@@ -1,45 +1,49 @@
-local XanaxUILib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Isaac708/Source/main/Source"))()
-local Ui = XanaxUILib:CreateWindow("ONI-H")
-local Info = Ui:CreateSection("Info")
-local ShindoLife = Ui:CreateSection("Shindo Life")
-local BloxFruit = Ui:CreateSection("Blox Fruit")
-local PetX = Ui:CreateSection("Pet X")
-local BedWars = Ui:CreateSection("Bed Wars")
-local DogPiece = Ui:CreateSection("Dog Piece")
-local Misc = Ui:CreateSection("Misc")
+   local XanaxUILib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Isaac708/Source/main/Source"))()
+   local Ui = XanaxUILib:CreateWindow("ONI-H")
+   local Info = Ui:CreateSection("Info")
+   local ShindoLife = Ui:CreateSection("Shindo Life")
+   local BloxFruit = Ui:CreateSection("Blox Fruit")
+   local PetX = Ui:CreateSection("Pet X")
+   local BedWars = Ui:CreateSection("Bed Wars")
+   local DogPiece = Ui:CreateSection("Dog Piece")
+   local Misc = Ui:CreateSection("Misc")
 
-Info:CreateLabel("Made by Isaac")
-Info:CreateLabel("ONI-H Premium")
-Info:CreateLabel("Thank you for Supporting!")
-Info:CreateLabel("5.1V")
-Info:CreateButton("Destroy UI", function() XanaxUILib.functions:DestroyGUI() end)
+   Info:CreateLabel("Made by Isaac")
+   Info:CreateLabel("ONI-H Premium")
+   Info:CreateLabel("Thank you for Supporting!")
+   Info:CreateLabel("5.1V")
+   Info:CreateButton("Destroy UI", function() XanaxUILib.functions:DestroyGUI() end)
 
-ShindoLife:CreateLabel("More Scripts Coming Soon..")
-ShindoLife:CreateButton("Snxw Hub Old", function() loadstring(game:HttpGet("https://snxwhub.xyz/scripts/oldVersion.lua"))() end)
+   ShindoLife:CreateLabel("More Scripts Coming Soon..")
+   ShindoLife:CreateButton("Snxw Hub Old", function() loadstring(game:HttpGet("https://snxwhub.xyz/scripts/oldVersion.lua"))() end)
 
 
-BloxFruit:CreateLabel("More Scripts Coming Soon..")
-BloxFruit:CreateButton("Night Hub", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/NightsTimeZ/Night_Script/main/BloxFruit.lua"))() end)
-BloxFruit:CreateButton("Mokuro Hub", function () loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/BloxFruit.lua")() end)
+   BloxFruit:CreateLabel("More Scripts Coming Soon..")
+   BloxFruit:CreateButton("Night Hub", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/NightsTimeZ/Night_Script/main/BloxFruit.lua"))() end)
+   BloxFruit:CreateButton("Mokuro Hub", function () loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/BloxFruit.lua")() end)
 
-Misc:CreateLabel("Features")
-Misc:CreateButton("IY Admin", function () loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))() end)
-Misc:CreateSlider("Walkspeed", "Walkspeed", 16, 100, false, function (ws)
-   game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = ws
-end)
+   Misc:CreateLabel("Features")
+   Misc:CreateButton("IY Admin", function () loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))() end)
+   Misc:CreateSlider("Walkspeed", "Walkspeed", 16, 100, false, function (ws)
+      game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = ws
+   end)
+   Misc:CreateSlider("JumpPower", "JumpHeight", 7.2, 100, false, function (jp)
+      game.Players.LocalPlayer.Character.Humanoid.JumpHeight = jp
+   end)
+   Misc:CreateButton("Reset", function () game.Players.LocalPlayer.Character.Humanoid.Health = 0 end)
 
-PetX:CreateLabel("More Scripts Coming Soon..")
-PetX:CreateButton("Ryans UI", function () loadstring(game:HttpGet('https://raw.githubusercontent.com/ScriptRUs/Ryans/main/PetSimulatorXAutofarm.lua'))() end)
+   PetX:CreateLabel("More Scripts Coming Soon..")
+   PetX:CreateButton("Ez Pets (Key)", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/TurfuGoldy/GoldenScripts/main/EzPets.lua", true))() end)
 
-BedWars:CreateLabel("More Scripts Coming Soon..")
-BedWars:CreateButton("VapeV4", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))() end)
+   BedWars:CreateLabel("More Scripts Coming Soon..")
+   BedWars:CreateButton("VapeV4", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))() end)
 
-DogPiece:CreateLabel("No GUI Available")
-DogPiece:CreateButton("Rainbow Fruit", function () local v1 = "Rainbow" -- Rainbow, Legendary, Common, Epic, Rare
-   local event = game:GetService("Players").LocalPlayer.PlayerGui["จะโปรทำไมอ่ะครับไม่มีปัญญาเล่นเอง?"].adminnoob.DogChat.DogCoins.Spin.Reward
-   event:FireServer(v1)
-end)
-DogPiece:CreateButton("Legendary Fruit", function () local v1 = "Legendary" -- Rainbow, Legendary, Common, Epic, Rare
-   local event = game:GetService("Players").LocalPlayer.PlayerGui["จะโปรทำไมอ่ะครับไม่มีปัญญาเล่นเอง?"].adminnoob.DogChat.DogCoins.Spin.Reward
-   event:FireServer(v1)
-end)
+   DogPiece:CreateLabel("No GUI Available")
+   DogPiece:CreateButton("Rainbow Fruit", function () local v1 = "Rainbow" -- Rainbow, Legendary, Common, Epic, Rare
+      local event = game:GetService("Players").LocalPlayer.PlayerGui["จะโปรทำไมอ่ะครับไม่มีปัญญาเล่นเอง?"].adminnoob.DogChat.DogCoins.Spin.Reward
+      event:FireServer(v1)
+   end)
+   DogPiece:CreateButton("Legendary Fruit", function () local v1 = "Legendary" -- Rainbow, Legendary, Common, Epic, Rare
+      local event = game:GetService("Players").LocalPlayer.PlayerGui["จะโปรทำไมอ่ะครับไม่มีปัญญาเล่นเอง?"].adminnoob.DogChat.DogCoins.Spin.Reward
+      event:FireServer(v1)
+   end)
