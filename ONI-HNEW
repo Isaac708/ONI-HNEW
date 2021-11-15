@@ -3,9 +3,10 @@ local Ui = XanaxUILib:CreateWindow("ONI-H")
 local Info = Ui:CreateSection("Info")
 local ShindoLife = Ui:CreateSection("Shindo Life")
 local BloxFruit = Ui:CreateSection("Blox Fruit")
-local Misc = Ui:CreateSection("Misc")
 local PetX = Ui:CreateSection("Pet X")
 local BedWars = Ui:CreateSection("Bed Wars")
+local DogPiece = Ui:CreateSection("Dog Piece")
+local Misc = Ui:CreateSection("Misc")
 
 Info:CreateLabel("Made by Isaac")
 Info:CreateLabel("ONI-H Premium")
@@ -31,3 +32,13 @@ PetX:CreateButton("Ryans UI", function () loadstring(game:HttpGet('https://raw.g
 
 BedWars:CreateLabel("More Scripts Coming Soon..")
 BedWars:CreateButton("VapeV4", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))() end)
+
+DogPiece:CreateLabel("No GUI")
+DogPiece:CreateButton("Rainbow Fruit", function () local v1 = "Rainbow" -- Rainbow, Legendary, Common, Epic, Rare
+   local event = game:GetService("Players").LocalPlayer.PlayerGui["จะโปรทำไมอ่ะครับไม่มีปัญญาเล่นเอง?"].adminnoob.DogChat.DogCoins.Spin.Reward
+   event:FireServer(v1)
+end)
+DogPiece:CreateButton("Legendary Fruit", function () local v1 = "Legendary" -- Rainbow, Legendary, Common, Epic, Rare
+   local event = game:GetService("Players").LocalPlayer.PlayerGui["จะโปรทำไมอ่ะครับไม่มีปัญญาเล่นเอง?"].adminnoob.DogChat.DogCoins.Spin.Reward
+   event:FireServer(v1)
+end)
