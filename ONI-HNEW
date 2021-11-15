@@ -11,6 +11,7 @@ local Misc = Ui:CreateSection("Misc")
 Info:CreateLabel("Made by Isaac")
 Info:CreateLabel("ONI-H Premium")
 Info:CreateLabel("Thank you for Supporting!")
+Info:CreateLabel("5.1V")
 Info:CreateButton("Destroy UI", function() XanaxUILib.functions:DestroyGUI() end)
 
 ShindoLife:CreateLabel("More Scripts Coming Soon..")
@@ -33,7 +34,7 @@ PetX:CreateButton("Ryans UI", function () loadstring(game:HttpGet('https://raw.g
 BedWars:CreateLabel("More Scripts Coming Soon..")
 BedWars:CreateButton("VapeV4", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))() end)
 
-DogPiece:CreateLabel("No GUI")
+DogPiece:CreateLabel("No GUI Available")
 DogPiece:CreateButton("Rainbow Fruit", function () local v1 = "Rainbow" -- Rainbow, Legendary, Common, Epic, Rare
    local event = game:GetService("Players").LocalPlayer.PlayerGui["จะโปรทำไมอ่ะครับไม่มีปัญญาเล่นเอง?"].adminnoob.DogChat.DogCoins.Spin.Reward
    event:FireServer(v1)
