@@ -6,6 +6,7 @@
    local PetX = Ui:CreateSection("Pet X")
    local BedWars = Ui:CreateSection("Bed Wars")
    local DogPiece = Ui:CreateSection("Dog Piece")
+   local TowerBattle = Ui:CreateSection("Tower Battle")
    local Misc = Ui:CreateSection("Misc")
 
    Info:CreateLabel("Made by Isaac")
@@ -33,13 +34,59 @@
    end)
    Misc:CreateButton("Reset", function () game.Players.LocalPlayer.Character.Humanoid.Health = 0 end)
 
-   PetX:CreateLabel("More Scripts Coming Soon..")
+   PetX:CreateLabel("More Coming Soon..")
    PetX:CreateButton("Ez Pets (Key)", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/TurfuGoldy/GoldenScripts/main/EzPets.lua", true))() end)
 
    BedWars:CreateLabel("More Scripts Coming Soon..")
    BedWars:CreateButton("VapeV4", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))() end)
-
-   DogPiece:CreateLabel("No GUI Available")
+   BedWars:CreateButton("F to Fly", function () local Players = game.Players
+      local LocalPlayer = Players.LocalPlayer
+      local UIs = game:GetService("UserInputService")
+      local Fly = false
+      
+      UIs.InputBegan:Connect(function(Key, No)
+          if Key.KeyCode == Enum.KeyCode.F and not No then
+              Fly = not Fly
+              if Fly then
+                  LocalPlayer.Character.Humanoid:LoadAnimation(Animation):Play()
+              else
+                  LocalPlayer.Character.HumanoidRootPart.Anchored = false
+              end
+          end
+      end)
+      
+      spawn(function()
+          while wait(0.05) do
+              pcall(function()
+                  if Fly then
+                      if LocalPlayer.Character.Humanoid.MoveDirection.Magnitude > 0 then
+                          LocalPlayer.Character:TranslateBy(LocalPlayer.Character.Humanoid.MoveDirection)
+                      end
+                  end
+              end)
+          end
+      end)
+      
+      spawn(function()
+          while wait(0.1) do
+              pcall(function()
+                  if Fly then
+                      LocalPlayer.Character.HumanoidRootPart.Anchored = not LocalPlayer.Character.HumanoidRootPart.Anchored
+                  end
+              end)
+          end
+      end)
+      
+      while task.wait() do
+          pcall(function()
+              if Fly then
+                  LocalPlayer.Character.Humanoid:ChangeState(11)
+              end
+          end)
+      end
+   end)
+   
+   DogPiece:CreateLabel("More Coming Soon..")
    DogPiece:CreateButton("Rainbow Fruit", function () local v1 = "Rainbow" -- Rainbow, Legendary, Common, Epic, Rare
       local event = game:GetService("Players").LocalPlayer.PlayerGui["จะโปรทำไมอ่ะครับไม่มีปัญญาเล่นเอง?"].adminnoob.DogChat.DogCoins.Spin.Reward
       event:FireServer(v1)
@@ -48,7 +95,18 @@
       local event = game:GetService("Players").LocalPlayer.PlayerGui["จะโปรทำไมอ่ะครับไม่มีปัญญาเล่นเอง?"].adminnoob.DogChat.DogCoins.Spin.Reward
       event:FireServer(v1)
    end)
-   DogPiece:CreateButton("Epic Fruit", function () local v1 = "Epic" -- Rainbow, Legendary, Common, Epic, Rare
+   DogPiece:CreateButton("Rare Fruit", function () local v1 = "Rare" -- Rainbow, Legendary, Common, Epic, Rare
       local event = game:GetService("Players").LocalPlayer.PlayerGui["จะโปรทำไมอ่ะครับไม่มีปัญญาเล่นเอง?"].adminnoob.DogChat.DogCoins.Spin.Reward
       event:FireServer(v1)
    end)
+   TowerBattle:CreateLabel("Put Autoexec")
+   TowerBattle:CreateToggle("Auto Farm", "On", function (Toggled)
+      if Toggled == true then
+         workspace:WaitForChild("SkipWaitVote"):InvokeServer()
+    while true do
+        workspace:WaitForChild("BuyZombie"):InvokeServer("Speedy")
+        workspace:WaitForChild("Make"):InvokeServer("Speedy")
+        wait()
+     end
+   end
+end)
