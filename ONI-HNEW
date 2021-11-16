@@ -21,6 +21,7 @@
    BloxFruit:CreateLabel("More Scripts Coming Soon..")
    BloxFruit:CreateButton("Night Hub", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/NightsTimeZ/Night_Script/main/BloxFruit.lua"))() end)
    BloxFruit:CreateButton("Mokuro Hub", function () loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/BloxFruit.lua")() end)
+   BloxFruit:CreateButton("Island Hub", function () loadstring(game:HttpGet(('https://raw.githubusercontent.com/vinhuchi/Island_Game/main/Beta-Testing.lua'),true))() end)
 
    Misc:CreateLabel("Features")
    Misc:CreateButton("IY Admin", function () loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))() end)
@@ -44,6 +45,10 @@
       event:FireServer(v1)
    end)
    DogPiece:CreateButton("Legendary Fruit", function () local v1 = "Legendary" -- Rainbow, Legendary, Common, Epic, Rare
+      local event = game:GetService("Players").LocalPlayer.PlayerGui["จะโปรทำไมอ่ะครับไม่มีปัญญาเล่นเอง?"].adminnoob.DogChat.DogCoins.Spin.Reward
+      event:FireServer(v1)
+   end)
+   DogPiece:CreateButton("Epic Fruit", function () local v1 = "Epic" -- Rainbow, Legendary, Common, Epic, Rare
       local event = game:GetService("Players").LocalPlayer.PlayerGui["จะโปรทำไมอ่ะครับไม่มีปัญญาเล่นเอง?"].adminnoob.DogChat.DogCoins.Spin.Reward
       event:FireServer(v1)
    end)
