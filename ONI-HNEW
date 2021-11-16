@@ -7,6 +7,7 @@
    local BedWars = Ui:CreateSection("Bed Wars")
    local DogPiece = Ui:CreateSection("Dog Piece")
    local TowerBattle = Ui:CreateSection("Tower Battle")
+   local RoGhoul = Ui:CreateSection("Ro Ghoul")
    local Misc = Ui:CreateSection("Misc")
 
    Info:CreateLabel("Made by Isaac")
@@ -17,16 +18,20 @@
 
    ShindoLife:CreateLabel("More Scripts Coming Soon..")
    ShindoLife:CreateButton("Snxw Hub Old", function() loadstring(game:HttpGet("https://snxwhub.xyz/scripts/oldVersion.lua"))() end)
+   ShindoLife:CreateButton("JRL Hub", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/JRL-lav/Main/main/Shindo%20v3"))() end)
 
 
    BloxFruit:CreateLabel("More Scripts Coming Soon..")
    BloxFruit:CreateButton("Night Hub", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/NightsTimeZ/Night_Script/main/BloxFruit.lua"))() end)
    BloxFruit:CreateButton("Mokuro Hub", function () loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/BloxFruit.lua")() end)
    BloxFruit:CreateButton("Island Hub", function () loadstring(game:HttpGet(('https://raw.githubusercontent.com/vinhuchi/Island_Game/main/Beta-Testing.lua'),true))() end)
+   BloxFruit:CreateButton("JRL Hub", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/JRL-lav/Main/main/V2"))() end)
 
    Misc:CreateLabel("Features")
    Misc:CreateButton("IY Admin", function () loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))() end)
-   Misc:CreateSlider("Walkspeed", "Walkspeed", 16, 100, false, function (ws)
+   Misc:CreateButton("Reviz Admin", function () loadstring(game:HttpGet('https://pastebinp.com/raw/WnWVpzzr'))() end)
+   Misc:CreateButton("Nullware Animation", function () loadstring(game:HttpGetAsync("https://gist.githubusercontent.com/M6HqVBcddw2qaN4s/dabc2500988785fbec1ce7c7aaee105d/raw/hVQJXfF4sR6yqSfJ"))() end)
+   Misc:CreateSlider("Walkspeed", "Walkspeed", 16, 100, false, function (ws)    
       game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = ws
    end)
    Misc:CreateSlider("JumpPower", "JumpHeight", 7.2, 100, false, function (jp)
@@ -138,6 +143,22 @@ end)
       local event = game:GetService("Players").LocalPlayer.PlayerGui["จะโปรทำไมอ่ะครับไม่มีปัญญาเล่นเอง?"].adminnoob.DogChat.DogCoins.Spin.Reward
       event:FireServer(v1)
    end)
+   DogPiece:CreateButton("Admin Sword", function () local v1 = "Change" --dont edit
+    local v2 = "SecretDogSword" -- Item Name
+    local v3 = "Inv" -- dont edit
+    local event = game:GetService("ReplicatedStorage").Inventory
+    
+    event:FireServer(v1, v2, v3)
+   end)
+   DogPiece:CreateButton("Flame Awaken Dog", function () local v1 = "Change" --dont edit
+    local v2 = "Dog Flame Orb" -- Item Name
+    local v3 = "Inv" -- dont edit
+    local event = game:GetService("ReplicatedStorage").Inventory
+    
+    event:FireServer(v1, v2, v3)
+    end)
+
+
    TowerBattle:CreateLabel("Put Autoexec")
    TowerBattle:CreateToggle("Auto Farm", "On", function (Toggled)
       if Toggled == true then
@@ -149,3 +170,6 @@ end)
      end
    end
 end)
+
+RoGhoul:CreateLabel("Use it On VIP")
+RoGhoul:CreateButton("JRL Hub", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/JRL-lav/Main/main/Ro-Ghoul"))() end)
