@@ -36,6 +36,7 @@
 
    PetX:CreateLabel("More Coming Soon..")
    PetX:CreateButton("Ez Pets (Key)", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/TurfuGoldy/GoldenScripts/main/EzPets.lua", true))() end)
+   PetX:CreateButton("DexHub", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/HonestlyDex/DexHub/main/Init"))() end)
    PetX:CreateButton("Fake Huge Cate", function () function HatchEgg(Pet)
     local pet = Pet
     for i,v in pairs(game.ReplicatedStorage.Game.Pets:GetChildren()) do
