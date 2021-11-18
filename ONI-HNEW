@@ -8,12 +8,13 @@
    local DogPiece = Ui:CreateSection("Dog Piece")
    local TowerBattle = Ui:CreateSection("Tower Battle")
    local RoGhoul = Ui:CreateSection("Ro Ghoul")
+   local Avatar = Ui:CreateSection("The Last Airbender")
    local Misc = Ui:CreateSection("Misc")
 
    Info:CreateLabel("Made by Isaac")
    Info:CreateLabel("ONI-H Premium")
    Info:CreateLabel("Thank you for Supporting!")
-   Info:CreateLabel("5.1V")
+   Info:CreateLabel("5.7V")
    Info:CreateButton("Destroy UI", function() XanaxUILib.functions:DestroyGUI() end)
 
    ShindoLife:CreateLabel("More Scripts Coming Soon..")
@@ -173,3 +174,6 @@ end)
 
 RoGhoul:CreateLabel("Use it On VIP")
 RoGhoul:CreateButton("JRL Hub", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/JRL-lav/Main/main/Ro-Ghoul"))() end)
+
+Avatar:CreateLabel("Enjoy!!")
+Avatar:CreateButton("TeaHub", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/Aurelius0863/TeaHub/main/Final_WBbQr2bcHOPkNEOt.lua"))() end)
