@@ -15,7 +15,7 @@
    Info:CreateLabel("Made by Isaac")
    Info:CreateLabel("ONI-H Premium")
    Info:CreateLabel("Thank you for Supporting!")
-   Info:CreateLabel("5.7V")
+   Info:CreateLabel("6.2V")
    Info:CreateButton("Destroy UI", function() XanaxUILib.functions:DestroyGUI() end)
 
    ShindoLife:CreateLabel("More Scripts Coming Soon..")
