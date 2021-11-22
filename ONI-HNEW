@@ -11,6 +11,7 @@
    local Avatar = Ui:CreateSection("The Last Airbender")
    local LegendPiece = Ui:CreateSection("Legend Piece")
    local PetFighters = Ui:CreateSection("Pet Fighters")
+   local PirateWar = Ui:CreateSection("Pirate Warriors")
    local Misc = Ui:CreateSection("Misc")
 
    Info:CreateLabel("Made by Isaac")
@@ -185,3 +186,43 @@ LegendPiece:CreateButton("Admin!(Bugy)", function () loadstring(game:HttpGet(('h
 
 PetFighters:CreateLabel("BETA")
 PetFighters:CreateButton("QuackHub", function () loadstring(game:HttpGet(('https://raw.githubusercontent.com/Isaac708/QuackHub/main/QuackHub'),true))() end)
+
+PirateWar:CreateLabel("Enjoy!")
+PirateWar:CreateButton("Inf Points", function () 
+    local v1 = "PointsControl"
+    local v2 = "addPoints"
+    local v3 = nil
+    local v4 = "Gun"
+    local v5 = -math.huge
+    local event = game:GetService("ReplicatedStorage").Remotes.ServerHandler
+    event:FireServer(v1, v2, v3, v4, v5)
+    wait(0.4)
+    local v1 = "PointsControl"
+    local v2 = "addPoints"
+    local v3 = nil
+    local v4 = "Gun"
+    local v5 = math.huge
+    local event = game:GetService("ReplicatedStorage").Remotes.ServerHandler
+    event:FireServer(v1, v2, v3, v4, v5)
+    
+end)
+PirateWar:CreateButton("Insta Kill", function () 
+    local old
+
+old = hookmetamethod(game, "__namecall", function(Self, ...)
+   local Args = {...}
+
+   if Args[1] == "DmgCentral" and Args[2] == "calculateDmg" and Args[6] == "Melee" then
+       Args[7] = getgenv().meleeDamage or math.huge
+   end
+
+   return old(Self, unpack(Args))
+end)
+    
+end)
+
+PirateWar:CreateButton("God Mode", function ()
+    local Char = game.Players.LocalPlayer.Character
+local Args = {"DmgCentral","calculateDmg",nil,Char,"Combat","Melee",-math.huge}
+game:GetService("ReplicatedStorage").Remotes.ServerHandler:FireServer(unpack(Args))
+end)
