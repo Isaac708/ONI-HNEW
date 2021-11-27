@@ -12,12 +12,14 @@
    local LegendPiece = Ui:CreateSection("Legend Piece")
    local PetFighters = Ui:CreateSection("Pet Fighters")
    local PirateWar = Ui:CreateSection("Pirate Warriors")
+   local WarSim = Ui:CreateSection("War Simulator")
    local Misc = Ui:CreateSection("Misc")
 
    Info:CreateLabel("Made by Isaac")
    Info:CreateLabel("ONI-H Premium")
    Info:CreateLabel("Thank you for Supporting!")
-   Info:CreateLabel("6.9V")
+   Info:CreateLabel("Sorry For Late Updates..")
+   Info:CreateLabel("7.0V")
    Info:CreateButton("Destroy UI", function() XanaxUILib.functions:DestroyGUI() end)
 
    ShindoLife:CreateLabel("More Scripts Coming Soon..")
@@ -225,4 +227,22 @@ PirateWar:CreateButton("God Mode", function ()
     local Char = game.Players.LocalPlayer.Character
 local Args = {"DmgCentral","calculateDmg",nil,Char,"Combat","Melee",-math.huge}
 game:GetService("ReplicatedStorage").Remotes.ServerHandler:FireServer(unpack(Args))
+end)
+
+WarSim:CreateLabel("Don't Zoom")
+WarSim:CreateButton("Op Gun", function ()
+    for i, v in pairs(getgc(true)) do
+    if type(v) == 'table' then
+    if rawget(v, 'mag') and rawget(v, 'recoil') then
+    v.mag = 100;
+    v.fire_rate = 1600;
+    v.fire_mode = "auto";
+    v.pellets = 7;
+    v.fire_distance = 300;
+    v.spread = 1
+    v.recoil = function() end
+    end
+    end
+    end
+    
 end)
