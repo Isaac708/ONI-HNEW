@@ -13,13 +13,14 @@
    local PetFighters = Ui:CreateSection("Pet Fighters")
    local PirateWar = Ui:CreateSection("Pirate Warriors")
    local WarSim = Ui:CreateSection("War Simulator")
+   local AOTL = Ui:CreateSection("AOT Life")
    local Misc = Ui:CreateSection("Misc")
 
    Info:CreateLabel("Made by Isaac")
    Info:CreateLabel("ONI-H Premium")
    Info:CreateLabel("Thank you for Supporting!")
    Info:CreateLabel("Sorry For Late Updates..")
-   Info:CreateLabel("7.0V")
+   Info:CreateLabel("7.1V")
    Info:CreateButton("Destroy UI", function() XanaxUILib.functions:DestroyGUI() end)
 
    ShindoLife:CreateLabel("More Scripts Coming Soon..")
@@ -246,3 +247,6 @@ WarSim:CreateButton("Op Gun", function ()
     end
     
 end)
+
+AOTL:CreateLabel("Enjoy!")
+AOTL:CreateButton("Op Hub", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/pattingbabies/blora/main/aotlife"))() end)
