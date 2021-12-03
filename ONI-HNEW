@@ -21,7 +21,7 @@
    Info:CreateLabel("ONI-H Premium")
    Info:CreateLabel("Thank you for Supporting!")
    Info:CreateLabel("Sorry For Late Updates..")
-   Info:CreateLabel("7.1V")
+   Info:CreateLabel("7.5V")
    Info:CreateButton("Destroy UI", function() XanaxUILib.functions:DestroyGUI() end)
 
    ShindoLife:CreateLabel("More Scripts Coming Soon..")
