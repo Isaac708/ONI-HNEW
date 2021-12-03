@@ -14,6 +14,7 @@
    local PirateWar = Ui:CreateSection("Pirate Warriors")
    local WarSim = Ui:CreateSection("War Simulator")
    local AOTL = Ui:CreateSection("AOT Life")
+   local DungeonQ = Ui:CreateSection("Dungeon Quest")
    local Misc = Ui:CreateSection("Misc")
 
    Info:CreateLabel("Made by Isaac")
@@ -187,8 +188,7 @@ Avatar:CreateButton("TeaHub", function () loadstring(game:HttpGet("https://raw.g
 LegendPiece:CreateLabel("Enjoy!")
 LegendPiece:CreateButton("Admin!(Bugy)", function () loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/LegendPiece'),true))() end)
 
-PetFighters:CreateLabel("BETA")
-PetFighters:CreateButton("QuackHub", function () loadstring(game:HttpGet(('https://raw.githubusercontent.com/Isaac708/QuackHub/main/QuackHub'),true))() end)
+PetFighters:CreateLabel("All Scripts Broken.")
 
 PirateWar:CreateLabel("Enjoy!")
 PirateWar:CreateButton("Inf Points", function () 
@@ -250,3 +250,6 @@ end)
 
 AOTL:CreateLabel("Enjoy!")
 AOTL:CreateButton("Op Hub", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/pattingbabies/blora/main/aotlife"))() end)
+
+DungeonQ:CreateLabel("Enjoy!")
+DungeonQ:CreateButton("OP Farm", function () loadstring(game:HttpGet("https://gist.githubusercontent.com/hngamingroblox/659adbebad6a9b3a07527e5f7e446d66/raw"))(); end)
