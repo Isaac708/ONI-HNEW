@@ -90,6 +90,7 @@
    PetX:CreateButton("Ez Pets(Bypassed)", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/hackerDashDash/PetSimulatorX/main/EZPETS_BYPASS.lua",true))() end)
    PetX:CreateButton("DexHub", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/HonestlyDex/DexHub/main/Init"))() end)
    PetX:CreateButton("Fake Hatcher :)", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/hackerDashDash/PetSimulatorX/main/petSimulatorXEquipV2.lua",true))() end)
+   PetX:CreateButton("GhostHub", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptRUs/Ryans/main/Ghosthub.lua"))() end)
 
    BedWars:CreateLabel("More Scripts Coming Soon..")
    BedWars:CreateButton("VapeV4", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))() end)
