@@ -1,3 +1,4 @@
+   local Lib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib"),true))()
    local XanaxUILib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Isaac708/Source/main/Source"))()
    local Ui = XanaxUILib:CreateWindow("ONI-H")
    local Info = Ui:CreateSection("Info")
@@ -19,12 +20,13 @@
    local SDSR = Ui:CreateSection("Deadly Sins Retribution")
    local NinjaSim = Ui:CreateSection("Ninja Simulator")
    local Misc = Ui:CreateSection("Misc")
+   Lib.prompt('ONI-HUB', 'Thank you for choosing us. Enjoy!')
 
    Info:CreateLabel("Made by Isaac")
    Info:CreateLabel("ONI-H Premium")
    Info:CreateLabel("Thank you for Supporting!")
    Info:CreateLabel("Sorry For Late Updates..")
-   Info:CreateLabel("8.9V")
+   Info:CreateLabel("8.7V")
    Info:CreateButton("Destroy UI", function() XanaxUILib.functions:DestroyGUI() end)
 
    ShindoLife:CreateLabel("More Scripts Coming Soon..")
