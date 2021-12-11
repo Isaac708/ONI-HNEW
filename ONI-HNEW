@@ -19,6 +19,7 @@
    local RoS = Ui:CreateSection("Ro-Slayer")
    local SDSR = Ui:CreateSection("Deadly Sins Retribution")
    local NinjaSim = Ui:CreateSection("Ninja Simulator")
+   local LootQuest= Ui:CreateSection("Loot Quest")
    local Misc = Ui:CreateSection("Misc")
    local Misc2= Ui:CreateSection("Misc2")
    Lib.prompt('ONI-HUB', 'Thank you for choosing us. Enjoy!')
@@ -27,7 +28,7 @@
    Info:CreateLabel("ONI-H Premium")
    Info:CreateLabel("Thank you for Supporting!")
    Info:CreateLabel("Sorry For Late Updates..")
-   Info:CreateLabel("9.1V")
+   Info:CreateLabel("9.5V")
    Info:CreateButton("Destroy UI", function() XanaxUILib.functions:DestroyGUI() end)
 
    ShindoLife:CreateLabel("More Scripts Coming Soon..")
@@ -303,3 +304,6 @@ NinjaSim:CreateButton("TP Safe Zone", function ()
     local plr = game:GetService('Players').LocalPlayer.Character
 plr.HumanoidRootPart.CFrame = CFrame.new(385.761169, 95.781395, -471.892029, 0.201925442, 1.77191453e-08, -0.979400873, 3.15938955e-08, 1, 2.460561e-08, 0.979400873, -3.59115866e-08, 0.201925442)
 end)
+
+LootQuest:CreateLabel("Enjoy!")
+LootQuest:CreateButton("Auto Farm", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/toskaman/fb/master/LQUpdate", true))() end)
