@@ -20,6 +20,7 @@
    local SDSR = Ui:CreateSection("Deadly Sins Retribution")
    local NinjaSim = Ui:CreateSection("Ninja Simulator")
    local Misc = Ui:CreateSection("Misc")
+   local Misc2= Ui:CreateSection("Misc2")
    Lib.prompt('ONI-HUB', 'Thank you for choosing us. Enjoy!')
 
    Info:CreateLabel("Made by Isaac")
@@ -88,7 +89,8 @@
       game.Players.LocalPlayer.Character.Humanoid.JumpHeight = jp
    end)
    Misc:CreateButton("Reset", function () game.Players.LocalPlayer.Character.Humanoid.Health = 0 end)
-   Misc:CreateButton("Low Server", function () loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80", true))(); end)
+   Misc2:CreateLabel("Features2")
+   Misc2:CreateButton("Low Server", function () loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80", true))(); end)
 
    PetX:CreateLabel("More Coming Soon..")
    PetX:CreateButton("Ez Pets (Key)", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/TurfuGoldy/GoldenScripts/main/EzPets.lua", true))() end)
