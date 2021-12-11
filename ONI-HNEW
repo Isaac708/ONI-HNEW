@@ -26,7 +26,7 @@
    Info:CreateLabel("ONI-H Premium")
    Info:CreateLabel("Thank you for Supporting!")
    Info:CreateLabel("Sorry For Late Updates..")
-   Info:CreateLabel("8.7V")
+   Info:CreateLabel("9.1V")
    Info:CreateButton("Destroy UI", function() XanaxUILib.functions:DestroyGUI() end)
 
    ShindoLife:CreateLabel("More Scripts Coming Soon..")
@@ -88,6 +88,7 @@
       game.Players.LocalPlayer.Character.Humanoid.JumpHeight = jp
    end)
    Misc:CreateButton("Reset", function () game.Players.LocalPlayer.Character.Humanoid.Health = 0 end)
+   Misc:CreateButton("Low Server", function () loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80", true))(); end)
 
    PetX:CreateLabel("More Coming Soon..")
    PetX:CreateButton("Ez Pets (Key)", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/TurfuGoldy/GoldenScripts/main/EzPets.lua", true))() end)
