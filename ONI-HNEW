@@ -20,6 +20,7 @@
    local SDSR = Ui:CreateSection("Deadly Sins Retribution")
    local NinjaSim = Ui:CreateSection("Ninja Simulator")
    local LootQuest= Ui:CreateSection("Loot Quest")
+   local RUMQ = Ui:CreateSection("Rumble Quest")
    local Misc = Ui:CreateSection("Misc")
    local Misc2= Ui:CreateSection("Misc2")
    Lib.prompt('ONI-HUB', 'Thank you for choosing us. Enjoy!')
@@ -28,11 +29,10 @@
    Info:CreateLabel("ONI-H Premium")
    Info:CreateLabel("Thank you for Supporting!")
    Info:CreateLabel("Sorry For Late Updates..")
-   Info:CreateLabel("9.5V")
+   Info:CreateLabel("ALPHA 10V")
    Info:CreateButton("Destroy UI", function() XanaxUILib.functions:DestroyGUI() end)
 
    ShindoLife:CreateLabel("More Scripts Coming Soon..")
-   ShindoLife:CreateButton("Snxw Hub Old", function() loadstring(game:HttpGet("https://snxwhub.xyz/scripts/oldVersion.lua"))() end)
    ShindoLife:CreateButton("JRL Hub", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/JRL-lav/Main/main/Shindo%20v3"))() end)
    ShindoLife:CreateButton("Solaris Hub", function () 
     local URL = "https://solarishub.dev/games"
@@ -80,8 +80,6 @@
 
    Misc:CreateLabel("Features")
    Misc:CreateButton("IY Admin", function () loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))() end)
-   Misc:CreateButton("Reviz Admin", function () loadstring(game:HttpGet('https://pastebinp.com/raw/WnWVpzzr'))() end)
-   Misc:CreateButton("Nullware Animation", function () loadstring(game:HttpGetAsync("https://gist.githubusercontent.com/M6HqVBcddw2qaN4s/dabc2500988785fbec1ce7c7aaee105d/raw/hVQJXfF4sR6yqSfJ"))() end)
    Misc:CreateButton("Auto Piano", function () loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/richie0866/MidiPlayer/main/package.lua"))() end)
    Misc:CreateSlider("Walkspeed", "Walkspeed", 16, 100, false, function (ws)    
       game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = ws
@@ -307,3 +305,6 @@ end)
 
 LootQuest:CreateLabel("Enjoy!")
 LootQuest:CreateButton("Auto Farm", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/toskaman/fb/master/LQUpdate", true))() end)
+
+RUMQ:CreateLabel("Enjoy!")
+RUMQ:CreateButton("Auto Farm", function () loadstring(game:HttpGet('https://raw.githubusercontent.com/Isaac708/VB/main/VB'))() end)
