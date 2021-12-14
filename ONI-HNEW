@@ -21,6 +21,7 @@
    local NinjaSim = Ui:CreateSection("Ninja Simulator")
    local LootQuest= Ui:CreateSection("Loot Quest")
    local RUMQ = Ui:CreateSection("Rumble Quest")
+   local WorldDef = Ui:CreateSection("World Def.")
    local Misc = Ui:CreateSection("Misc")
    local Misc2= Ui:CreateSection("Misc2")
    Lib.prompt('ONI-HUB', 'Thank you for choosing us. Enjoy!')
@@ -29,7 +30,7 @@
    Info:CreateLabel("ONI-H Premium")
    Info:CreateLabel("Thank you for Supporting!")
    Info:CreateLabel("Sorry For Late Updates..")
-   Info:CreateLabel("ALPHA 10V")
+   Info:CreateLabel("ALPHA 11V")
    Info:CreateButton("Destroy UI", function() XanaxUILib.functions:DestroyGUI() end)
 
    ShindoLife:CreateLabel("More Scripts Coming Soon..")
@@ -309,3 +310,7 @@ LootQuest:CreateButton("Auto Farm", function () loadstring(game:HttpGet("https:/
 
 RUMQ:CreateLabel("Enjoy!")
 RUMQ:CreateButton("Auto Farm", function () loadstring(game:HttpGet('https://raw.githubusercontent.com/Isaac708/VB/main/VB'))() end)
+
+WorldDef:CreateLabel("Dino Gun Only")
+WorldDef:CreateButton("Inf Relode", function () game:GetService("Players").LocalPlayer.Backpack["Dino Gun"].Configuration.ReloadTime.Value = 0 end)
+WorldDef:CreateButton("Insta-Kill", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/goodluck3646/mahback/main/README.md"))() end)
