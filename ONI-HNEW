@@ -324,4 +324,5 @@ LoreG:CreateButton("Inf Money", function ()
            game.Players.LocalPlayer.PlayerGui.ChatDialogues.Dialogues.Function:FireServer("FisherFinished")
         end
     end end)
-
+LoreG:CreateButton("Teleport", function ()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/mlartix/Lore-Game/main/Lore-Game-Teleport-Script"))() end)
