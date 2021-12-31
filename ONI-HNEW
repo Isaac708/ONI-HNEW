@@ -36,6 +36,7 @@
 
    ShindoLife:CreateLabel("More Scripts Coming Soon..")
    ShindoLife:CreateButton("JRL Hub", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/JRL-lav/Main/main/Shindo%20v3"))() end)
+   ShindoLife:CreateButton("Premier Hub", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/PremierHub/Data/main/code.lua"))() end)
    ShindoLife:CreateButton("Solaris Hub", function () 
     local URL = "https://solarishub.dev/games"
 
