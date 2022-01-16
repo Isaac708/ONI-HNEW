@@ -1,195 +1,196 @@
-   local Lib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib"),true))()
-   local XanaxUILib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Isaac708/Source/main/Source"))()
-   local Ui = XanaxUILib:CreateWindow("ONI-H")
-   local Info = Ui:CreateSection("Info")
-   local ShindoLife = Ui:CreateSection("Shindo Life")
-   local BloxFruit = Ui:CreateSection("Blox Fruit")
-   local PetX = Ui:CreateSection("Pet X")
-   local BedWars = Ui:CreateSection("Bed Wars")
-   local DogPiece = Ui:CreateSection("Dog Piece")
-   local TowerBattle = Ui:CreateSection("Tower Battle")
-   local RoGhoul = Ui:CreateSection("Ro Ghoul")
-   local Avatar = Ui:CreateSection("The Last Airbender")
-   local LegendPiece = Ui:CreateSection("Legend Piece")
-   local PetFighters = Ui:CreateSection("Pet Fighters")
-   local PirateWar = Ui:CreateSection("Pirate Warriors")
-   local WarSim = Ui:CreateSection("War Simulator")
-   local AOTL = Ui:CreateSection("AOT Life")
-   local DungeonQ = Ui:CreateSection("Dungeon Quest")
-   local RoS = Ui:CreateSection("Ro-Slayer")
-   local SDSR = Ui:CreateSection("Deadly Sins Retribution")
-   local NinjaSim = Ui:CreateSection("Ninja Simulator")
-   local LootQuest= Ui:CreateSection("Loot Quest")
-   local RUMQ = Ui:CreateSection("Rumble Quest")
-   local WorldDef = Ui:CreateSection("World Def.")
-   local LoreG = Ui:CreateSection("Lore Game")
-   local Misc = Ui:CreateSection("Misc")
-   local Misc2= Ui:CreateSection("Misc2")
-   Lib.prompt('ONI-HUB', 'Thank you for choosing us. Enjoy!')
+local Lib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib"),true))()
+local XanaxUILib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Isaac708/Source/main/Source"))()
+local Ui = XanaxUILib:CreateWindow("ONI-H")
+local Info = Ui:CreateSection("Info")
+local ShindoLife = Ui:CreateSection("Shindo Life")
+local BloxFruit = Ui:CreateSection("Blox Fruit")
+local PetX = Ui:CreateSection("Pet X")
+local BedWars = Ui:CreateSection("Bed Wars")
+local DogPiece = Ui:CreateSection("Dog Piece")
+local TowerBattle = Ui:CreateSection("Tower Battle")
+local RoGhoul = Ui:CreateSection("Ro Ghoul")
+local Avatar = Ui:CreateSection("The Last Airbender")
+local LegendPiece = Ui:CreateSection("Legend Piece")
+local PetFighters = Ui:CreateSection("Pet Fighters")
+local PirateWar = Ui:CreateSection("Pirate Warriors")
+local WarSim = Ui:CreateSection("War Simulator")
+local AOTL = Ui:CreateSection("AOT Life")
+local DungeonQ = Ui:CreateSection("Dungeon Quest")
+local RoS = Ui:CreateSection("Ro-Slayer")
+local SDSR = Ui:CreateSection("Deadly Sins Retribution")
+local NinjaSim = Ui:CreateSection("Ninja Simulator")
+local LootQuest= Ui:CreateSection("Loot Quest")
+local RUMQ = Ui:CreateSection("Rumble Quest")
+local WorldDef = Ui:CreateSection("World Def.")
+local LoreG = Ui:CreateSection("Lore Game")
+local AnCl = Ui:CreateSection("Anime Clicker")x
+local Misc = Ui:CreateSection("Misc")
+local Misc2= Ui:CreateSection("Misc2")
+Lib.prompt('ONI-HUB', 'Thank you for choosing us. Enjoy!')
 
-   Info:CreateLabel("Made by Isaac")
-   Info:CreateLabel("ONI-H Premium")
-   Info:CreateLabel("Thank you for Supporting!")
-   Info:CreateLabel("Sorry For Late Updates..")
-   Info:CreateLabel("ALPHA 13V")
-   Info:CreateButton("Destroy UI", function() XanaxUILib.functions:DestroyGUI() end)
+Info:CreateLabel("Made by Isaac")
+Info:CreateLabel("ONI-H Premium")
+Info:CreateLabel("Thank you for Supporting!")
+Info:CreateLabel("I'm kinda dead")
+Info:CreateLabel("14V")
+Info:CreateButton("Destroy UI", function() XanaxUILib.functions:DestroyGUI() end)
 
-   ShindoLife:CreateLabel("More Scripts Coming Soon..")
-   ShindoLife:CreateButton("JRL Hub", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/JRL-lav/Main/main/Shindo%20v3"))() end)
-   ShindoLife:CreateButton("Premier Hub", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/PremierHub/Data/main/code.lua"))() end)
-   ShindoLife:CreateButton("Solaris Hub", function () 
-    local URL = "https://solarishub.dev/games"
+ShindoLife:CreateLabel("More Scripts Coming Soon..")
+ShindoLife:CreateButton("JRL Hub", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/JRL-lav/Main/main/Shindo%20v3"))() end)
+ShindoLife:CreateButton("Premier Hub", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/PremierHub/Data/main/code.lua"))() end)
+ShindoLife:CreateButton("Solaris Hub", function () 
+ local URL = "https://solarishub.dev/games"
 
-    local games = {
-        [286090429] = "Arsenal",
-        [1782832995] = "AUT",
-        [3233893879] = "Bad Business",
-        [3527629287] = "Big Paintball",
-        -- [6494523288] = "Blade Quest",
-        -- [5490351219] = "Clicker Madness",
-        [115797356] = "Counter Blox",
-        [2788229376] = "Da Hood",
-        [6172932937] = "Energy Assault",
-        -- [] = "HH",
-        [606849621] = "Jailbreak",
-        [254394801] = "KAT",
-        [6381829480] = "Kings Legacy SS",
-        [142823291] = "Murder Mystery",
-        [21532277] = "Notoriety",
-        [292439477] = "Phantom Forces",
-        [5041144419] = "SCP Roleplay",
-        [1511883870] = "Shindo Life",
-        [1962086868] = "TOH",
-        [4520749081] = "Kings Legacy"
-    }
+ local games = {
+     [286090429] = "Arsenal",
+     [1782832995] = "AUT",
+     [3233893879] = "Bad Business",
+     [3527629287] = "Big Paintball",
+     -- [6494523288] = "Blade Quest",
+     -- [5490351219] = "Clicker Madness",
+     [115797356] = "Counter Blox",
+     [2788229376] = "Da Hood",
+     [6172932937] = "Energy Assault",
+     -- [] = "HH",
+     [606849621] = "Jailbreak",
+     [254394801] = "KAT",
+     [6381829480] = "Kings Legacy SS",
+     [142823291] = "Murder Mystery",
+     [21532277] = "Notoriety",
+     [292439477] = "Phantom Forces",
+     [5041144419] = "SCP Roleplay",
+     [1511883870] = "Shindo Life",
+     [1962086868] = "TOH",
+     [4520749081] = "Kings Legacy"
+ }
+ 
+ for i,v in next, games do
+     games[i] = table.concat(v:split(' '), '_')
+ end
+ 
+ local name = games[game.PlaceId] or games[game.GameId]
+ 
+ return loadstring(game:HttpGet(URL .. "/" .. (name or "Universal") .. ".lua", true))()
     
-    for i,v in next, games do
-        games[i] = table.concat(v:split(' '), '_')
-    end
-    
-    local name = games[game.PlaceId] or games[game.GameId]
-    
-    return loadstring(game:HttpGet(URL .. "/" .. (name or "Universal") .. ".lua", true))()
-       
-   end)
+end)
 
 
-   BloxFruit:CreateLabel("More Scripts Coming Soon..")
-   BloxFruit:CreateButton("Night Hub", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/NightsTimeZ/Night_Script/main/BloxFruit.lua"))() end)
-   BloxFruit:CreateButton("Mokuro Hub", function () loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/BloxFruit.lua")() end)
-   BloxFruit:CreateButton("Island Hub", function () loadstring(game:HttpGet(('https://raw.githubusercontent.com/vinhuchi/Island_Game/main/Beta-Testing.lua'),true))() end)
-   BloxFruit:CreateButton("JRL Hub", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/JRL-lav/Main/main/V2"))() end)
-   BloxFruit:CreateButton("Op Farm", function () loadstring(game:HttpGet(("https://aizen.ml/uploads/bloxf.txt")))() end)
+BloxFruit:CreateLabel("More Scripts Coming Soon..")
+BloxFruit:CreateButton("Night Hub", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/NightsTimeZ/Night_Script/main/BloxFruit.lua"))() end)
+BloxFruit:CreateButton("Mokuro Hub", function () loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/BloxFruit.lua")() end)
+BloxFruit:CreateButton("Island Hub", function () loadstring(game:HttpGet(('https://raw.githubusercontent.com/vinhuchi/Island_Game/main/Beta-Testing.lua'),true))() end)
+BloxFruit:CreateButton("JRL Hub", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/JRL-lav/Main/main/V2"))() end)
+BloxFruit:CreateButton("Op Farm", function () loadstring(game:HttpGet(("https://aizen.ml/uploads/bloxf.txt")))() end)
 
-   Misc:CreateLabel("Features")
-   Misc:CreateButton("IY Admin", function () loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))() end)
-   Misc:CreateButton("Auto Piano", function () loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/richie0866/MidiPlayer/main/package.lua"))() end)
-   Misc:CreateSlider("Walkspeed", "Walkspeed", 16, 100, false, function (ws)    
-      game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = ws
-   end)
-   Misc:CreateSlider("JumpPower", "JumpHeight", 7.2, 100, false, function (jp)
-      game.Players.LocalPlayer.Character.Humanoid.JumpHeight = jp
-   end)
-   Misc:CreateButton("Reset", function () game.Players.LocalPlayer.Character.Humanoid.Health = 0 end)
-   Misc2:CreateLabel("Features2")
-   Misc2:CreateButton("Low Server", function () loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80", true))(); end)
+Misc:CreateLabel("Features")
+Misc:CreateButton("IY Admin", function () loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))() end)
+Misc:CreateButton("Auto Piano", function () loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/richie0866/MidiPlayer/main/package.lua"))() end)
+Misc:CreateSlider("Walkspeed", "Walkspeed", 16, 100, false, function (ws)    
+   game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = ws
+end)
+Misc:CreateSlider("JumpPower", "JumpHeight", 7.2, 100, false, function (jp)
+   game.Players.LocalPlayer.Character.Humanoid.JumpHeight = jp
+end)
+Misc:CreateButton("Reset", function () game.Players.LocalPlayer.Character.Humanoid.Health = 0 end)
+Misc2:CreateLabel("Features2")
+Misc2:CreateButton("Low Server", function () loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80", true))(); end)
 
-   PetX:CreateLabel("More Coming Soon..")
-   PetX:CreateButton("Ez Pets (Key)", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/TurfuGoldy/GoldenScripts/main/EzPets.lua", true))() end)
-   PetX:CreateButton("Ez Pets(Bypassed)", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/hackerDashDash/PetSimulatorX/main/EZPETS_BYPASS.lua",true))() end)
-   PetX:CreateButton("DexHub", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/HonestlyDex/DexHub/main/Init"))() end)
-   PetX:CreateButton("Fake Hatcher :)", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/hackerDashDash/PetSimulatorX/main/petSimulatorXEquipV2.lua",true))() end)
-   PetX:CreateButton("GhostHub", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptRUs/Ryans/main/Ghosthub.lua"))() end)
-   PetX:CreateButton("New Hub", function () loadstring(game:HttpGet("https://schervi.wtf/ImpactXBeta.lua"))() end)
+PetX:CreateLabel("More Coming Soon..")
+PetX:CreateButton("Ez Pets (Key)", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/TurfuGoldy/GoldenScripts/main/EzPets.lua", true))() end)
+PetX:CreateButton("Ez Pets(Bypassed)", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/hackerDashDash/PetSimulatorX/main/EZPETS_BYPASS.lua",true))() end)
+PetX:CreateButton("DexHub", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/HonestlyDex/DexHub/main/Init"))() end)
+PetX:CreateButton("Fake Hatcher :)", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/hackerDashDash/PetSimulatorX/main/petSimulatorXEquipV2.lua",true))() end)
+PetX:CreateButton("GhostHub", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptRUs/Ryans/main/Ghosthub.lua"))() end)
+PetX:CreateButton("New Hub", function () loadstring(game:HttpGet("https://schervi.wtf/ImpactXBeta.lua"))() end)
 
-   BedWars:CreateLabel("More Scripts Coming Soon..")
-   BedWars:CreateButton("VapeV4", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))() end)
-   BedWars:CreateButton("F to Fly", function () local Players = game.Players
-      local LocalPlayer = Players.LocalPlayer
-      local UIs = game:GetService("UserInputService")
-      local Fly = false
-      
-      UIs.InputBegan:Connect(function(Key, No)
-          if Key.KeyCode == Enum.KeyCode.F and not No then
-              Fly = not Fly
-              if Fly then
-                  LocalPlayer.Character.Humanoid:LoadAnimation(Animation):Play()
-              else
-                  LocalPlayer.Character.HumanoidRootPart.Anchored = false
-              end
-          end
-      end)
-      
-      spawn(function()
-          while wait(0.05) do
-              pcall(function()
-                  if Fly then
-                      if LocalPlayer.Character.Humanoid.MoveDirection.Magnitude > 0 then
-                          LocalPlayer.Character:TranslateBy(LocalPlayer.Character.Humanoid.MoveDirection)
-                      end
-                  end
-              end)
-          end
-      end)
-      
-      spawn(function()
-          while wait(0.1) do
-              pcall(function()
-                  if Fly then
-                      LocalPlayer.Character.HumanoidRootPart.Anchored = not LocalPlayer.Character.HumanoidRootPart.Anchored
-                  end
-              end)
-          end
-      end)
-      
-      while task.wait() do
-          pcall(function()
-              if Fly then
-                  LocalPlayer.Character.Humanoid:ChangeState(11)
-              end
-          end)
-      end
+BedWars:CreateLabel("More Scripts Coming Soon..")
+BedWars:CreateButton("VapeV4", function () loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))() end)
+BedWars:CreateButton("F to Fly", function () local Players = game.Players
+   local LocalPlayer = Players.LocalPlayer
+   local UIs = game:GetService("UserInputService")
+   local Fly = false
+   
+   UIs.InputBegan:Connect(function(Key, No)
+       if Key.KeyCode == Enum.KeyCode.F and not No then
+           Fly = not Fly
+           if Fly then
+               LocalPlayer.Character.Humanoid:LoadAnimation(Animation):Play()
+           else
+               LocalPlayer.Character.HumanoidRootPart.Anchored = false
+           end
+       end
    end)
    
-   DogPiece:CreateLabel("More Coming Soon..")
-   DogPiece:CreateButton("Rainbow Fruit", function () local v1 = "Rainbow" -- Rainbow, Legendary, Common, Epic, Rare
-      local event = game:GetService("Players").LocalPlayer.PlayerGui["จะโปรทำไมอ่ะครับไม่มีปัญญาเล่นเอง?"].adminnoob.DogChat.DogCoins.Spin.Reward
-      event:FireServer(v1)
+   spawn(function()
+       while wait(0.05) do
+           pcall(function()
+               if Fly then
+                   if LocalPlayer.Character.Humanoid.MoveDirection.Magnitude > 0 then
+                       LocalPlayer.Character:TranslateBy(LocalPlayer.Character.Humanoid.MoveDirection)
+                   end
+               end
+           end)
+       end
    end)
-   DogPiece:CreateButton("Legendary Fruit", function () local v1 = "Legendary" -- Rainbow, Legendary, Common, Epic, Rare
-      local event = game:GetService("Players").LocalPlayer.PlayerGui["จะโปรทำไมอ่ะครับไม่มีปัญญาเล่นเอง?"].adminnoob.DogChat.DogCoins.Spin.Reward
-      event:FireServer(v1)
+   
+   spawn(function()
+       while wait(0.1) do
+           pcall(function()
+               if Fly then
+                   LocalPlayer.Character.HumanoidRootPart.Anchored = not LocalPlayer.Character.HumanoidRootPart.Anchored
+               end
+           end)
+       end
    end)
-   DogPiece:CreateButton("Rare Fruit", function () local v1 = "Rare" -- Rainbow, Legendary, Common, Epic, Rare
-      local event = game:GetService("Players").LocalPlayer.PlayerGui["จะโปรทำไมอ่ะครับไม่มีปัญญาเล่นเอง?"].adminnoob.DogChat.DogCoins.Spin.Reward
-      event:FireServer(v1)
-   end)
-   DogPiece:CreateButton("Admin Sword", function () local v1 = "Change" --dont edit
-    local v2 = "SecretDogSword" -- Item Name
-    local v3 = "Inv" -- dont edit
-    local event = game:GetService("ReplicatedStorage").Inventory
-    
-    event:FireServer(v1, v2, v3)
-   end)
-   DogPiece:CreateButton("Flame Awaken Dog", function () local v1 = "Change" --dont edit
-    local v2 = "Dog Flame Orb" -- Item Name
-    local v3 = "Inv" -- dont edit
-    local event = game:GetService("ReplicatedStorage").Inventory
-    
-    event:FireServer(v1, v2, v3)
-    end)
-
-
-   TowerBattle:CreateLabel("Put Autoexec")
-   TowerBattle:CreateToggle("Auto Farm", "On", function (Toggled)
-      if Toggled == true then
-         workspace:WaitForChild("SkipWaitVote"):InvokeServer()
-    while true do
-        workspace:WaitForChild("BuyZombie"):InvokeServer("Speedy")
-        workspace:WaitForChild("Make"):InvokeServer("Speedy")
-        wait()
-     end
+   
+   while task.wait() do
+       pcall(function()
+           if Fly then
+               LocalPlayer.Character.Humanoid:ChangeState(11)
+           end
+       end)
    end
+end)
+
+DogPiece:CreateLabel("More Coming Soon..")
+DogPiece:CreateButton("Rainbow Fruit", function () local v1 = "Rainbow" -- Rainbow, Legendary, Common, Epic, Rare
+   local event = game:GetService("Players").LocalPlayer.PlayerGui["จะโปรทำไมอ่ะครับไม่มีปัญญาเล่นเอง?"].adminnoob.DogChat.DogCoins.Spin.Reward
+   event:FireServer(v1)
+end)
+DogPiece:CreateButton("Legendary Fruit", function () local v1 = "Legendary" -- Rainbow, Legendary, Common, Epic, Rare
+   local event = game:GetService("Players").LocalPlayer.PlayerGui["จะโปรทำไมอ่ะครับไม่มีปัญญาเล่นเอง?"].adminnoob.DogChat.DogCoins.Spin.Reward
+   event:FireServer(v1)
+end)
+DogPiece:CreateButton("Rare Fruit", function () local v1 = "Rare" -- Rainbow, Legendary, Common, Epic, Rare
+   local event = game:GetService("Players").LocalPlayer.PlayerGui["จะโปรทำไมอ่ะครับไม่มีปัญญาเล่นเอง?"].adminnoob.DogChat.DogCoins.Spin.Reward
+   event:FireServer(v1)
+end)
+DogPiece:CreateButton("Admin Sword", function () local v1 = "Change" --dont edit
+ local v2 = "SecretDogSword" -- Item Name
+ local v3 = "Inv" -- dont edit
+ local event = game:GetService("ReplicatedStorage").Inventory
+ 
+ event:FireServer(v1, v2, v3)
+end)
+DogPiece:CreateButton("Flame Awaken Dog", function () local v1 = "Change" --dont edit
+ local v2 = "Dog Flame Orb" -- Item Name
+ local v3 = "Inv" -- dont edit
+ local event = game:GetService("ReplicatedStorage").Inventory
+ 
+ event:FireServer(v1, v2, v3)
+ end)
+
+
+TowerBattle:CreateLabel("Put Autoexec")
+TowerBattle:CreateToggle("Auto Farm", "On", function (Toggled)
+   if Toggled == true then
+      workspace:WaitForChild("SkipWaitVote"):InvokeServer()
+ while true do
+     workspace:WaitForChild("BuyZombie"):InvokeServer("Speedy")
+     workspace:WaitForChild("Make"):InvokeServer("Speedy")
+     wait()
+  end
+end
 end)
 
 RoGhoul:CreateLabel("Use it On VIP")
@@ -205,60 +206,60 @@ PetFighters:CreateLabel("All Scripts Broken.")
 
 PirateWar:CreateLabel("Enjoy!")
 PirateWar:CreateButton("Inf Points", function () 
-    local v1 = "PointsControl"
-    local v2 = "addPoints"
-    local v3 = nil
-    local v4 = "Gun"
-    local v5 = -math.huge
-    local event = game:GetService("ReplicatedStorage").Remotes.ServerHandler
-    event:FireServer(v1, v2, v3, v4, v5)
-    wait(0.4)
-    local v1 = "PointsControl"
-    local v2 = "addPoints"
-    local v3 = nil
-    local v4 = "Gun"
-    local v5 = math.huge
-    local event = game:GetService("ReplicatedStorage").Remotes.ServerHandler
-    event:FireServer(v1, v2, v3, v4, v5)
-    
+ local v1 = "PointsControl"
+ local v2 = "addPoints"
+ local v3 = nil
+ local v4 = "Gun"
+ local v5 = -math.huge
+ local event = game:GetService("ReplicatedStorage").Remotes.ServerHandler
+ event:FireServer(v1, v2, v3, v4, v5)
+ wait(0.4)
+ local v1 = "PointsControl"
+ local v2 = "addPoints"
+ local v3 = nil
+ local v4 = "Gun"
+ local v5 = math.huge
+ local event = game:GetService("ReplicatedStorage").Remotes.ServerHandler
+ event:FireServer(v1, v2, v3, v4, v5)
+ 
 end)
 PirateWar:CreateButton("Insta Kill", function () 
-    local old
+ local old
 
 old = hookmetamethod(game, "__namecall", function(Self, ...)
-   local Args = {...}
+local Args = {...}
 
-   if Args[1] == "DmgCentral" and Args[2] == "calculateDmg" and Args[6] == "Melee" then
-       Args[7] = getgenv().meleeDamage or math.huge
-   end
+if Args[1] == "DmgCentral" and Args[2] == "calculateDmg" and Args[6] == "Melee" then
+    Args[7] = getgenv().meleeDamage or math.huge
+end
 
-   return old(Self, unpack(Args))
+return old(Self, unpack(Args))
 end)
-    
+ 
 end)
 
 PirateWar:CreateButton("God Mode", function ()
-    local Char = game.Players.LocalPlayer.Character
+ local Char = game.Players.LocalPlayer.Character
 local Args = {"DmgCentral","calculateDmg",nil,Char,"Combat","Melee",-math.huge}
 game:GetService("ReplicatedStorage").Remotes.ServerHandler:FireServer(unpack(Args))
 end)
 
 WarSim:CreateLabel("Don't Zoom")
 WarSim:CreateButton("Op Gun", function ()
-    for i, v in pairs(getgc(true)) do
-    if type(v) == 'table' then
-    if rawget(v, 'mag') and rawget(v, 'recoil') then
-    v.mag = 100;
-    v.fire_rate = 1600;
-    v.fire_mode = "auto";
-    v.pellets = 7;
-    v.fire_distance = 300;
-    v.spread = 1
-    v.recoil = function() end
-    end
-    end
-    end
-    
+ for i, v in pairs(getgc(true)) do
+ if type(v) == 'table' then
+ if rawget(v, 'mag') and rawget(v, 'recoil') then
+ v.mag = 100;
+ v.fire_rate = 1600;
+ v.fire_mode = "auto";
+ v.pellets = 7;
+ v.fire_distance = 300;
+ v.spread = 1
+ v.recoil = function() end
+ end
+ end
+ end
+ 
 end)
 
 AOTL:CreateLabel("Enjoy!")
@@ -279,8 +280,8 @@ end)
 
 NinjaSim:CreateLabel("Enjoy.")
 NinjaSim:CreateButton("Farm", function ()
-    _G.Toggle = true 
- 
+ _G.Toggle = true 
+
 while true do 
 if _G.Toggle then 
 local tool = game.Players.LocalPlayer.Backpack:FindFirstChildOfClass("Tool") or game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool")
@@ -291,8 +292,8 @@ wait()
 end
 end)
 NinjaSim:CreateButton("Farm Off", function ()
-    _G.Toggle = false 
- 
+ _G.Toggle = false 
+
 while true do 
 if _G.Toggle then 
 local tool = game.Players.LocalPlayer.Backpack:FindFirstChildOfClass("Tool") or game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool")
@@ -303,7 +304,7 @@ wait()
 end
 end)
 NinjaSim:CreateButton("TP Safe Zone", function ()
-    local plr = game:GetService('Players').LocalPlayer.Character
+ local plr = game:GetService('Players').LocalPlayer.Character
 plr.HumanoidRootPart.CFrame = CFrame.new(385.761169, 95.781395, -471.892029, 0.201925442, 1.77191453e-08, -0.979400873, 3.15938955e-08, 1, 2.460561e-08, 0.979400873, -3.59115866e-08, 0.201925442)
 end)
 
@@ -319,11 +320,23 @@ WorldDef:CreateButton("Insta-Kill", function () loadstring(game:HttpGet("https:/
 
 LoreG:CreateLabel("Enjoy!")
 LoreG:CreateButton("Inf Money", function ()
-    while wait (0.1) do
-        local Amount = 300 -- each fire gives 30 money, so the amount should optimally be a multiple of 30
-        for i = 1,Amount/30 do
-           game.Players.LocalPlayer.PlayerGui.ChatDialogues.Dialogues.Function:FireServer("FisherFinished")
-        end
-    end end)
+ while wait (0.1) do
+     local Amount = 300 -- each fire gives 30 money, so the amount should optimally be a multiple of 30
+     for i = 1,Amount/30 do
+        game.Players.LocalPlayer.PlayerGui.ChatDialogues.Dialogues.Function:FireServer("FisherFinished")
+     end
+ end end)
 LoreG:CreateButton("Teleport", function ()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/mlartix/Lore-Game/main/Lore-Game-Teleport-Script"))() end)
+
+
+AnCl:CreateLabe("Shhhh I'm still dead")
+AnCl:CreateButton("Auto Farm", function ()
+
+    if syn then 
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/Shiny-Tool/main/AnimeClickerSimulator.lua"))()
+        else
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/Shiny-Tool/main/iris.lua"))()
+        end
+    
+end)
