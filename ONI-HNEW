@@ -329,12 +329,11 @@ LoreG:CreateButton("Inf Money", function ()
 LoreG:CreateButton("Teleport", function ()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/mlartix/Lore-Game/main/Lore-Game-Teleport-Script"))() end)
 
-
-AnCl:CreateLabel("Shhhh I'm still dead")
-AnCl:CreateButton("Auto Farm", function ()
-if syn then 
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/Shiny-Tool/main/AnimeClickerSimulator.lua"))()
-else
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/Shiny-Tool/main/iris.lua"))()
-end
+AnCl:CreateLabel("Hello There.")
+AnCl:CreateButton("Auto Farm", function()
+    if syn then 
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/Shiny-Tool/main/AnimeClickerSimulator.lua"))()
+        else
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/Shiny-Tool/main/iris.lua"))()
+        end
 end)
