@@ -332,11 +332,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/mlartix/Lore-Game/mai
 
 AnCl:CreateLabe("Shhhh I'm still dead")
 AnCl:CreateButton("Auto Farm", function ()
-
-    if syn then 
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/Shiny-Tool/main/AnimeClickerSimulator.lua"))()
-        else
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/Shiny-Tool/main/iris.lua"))()
-        end
-    
+if syn then 
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/Shiny-Tool/main/AnimeClickerSimulator.lua"))()
+else
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/Shiny-Tool/main/iris.lua"))()
+end
 end)
