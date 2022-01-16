@@ -23,7 +23,7 @@ local LootQuest= Ui:CreateSection("Loot Quest")
 local RUMQ = Ui:CreateSection("Rumble Quest")
 local WorldDef = Ui:CreateSection("World Def.")
 local LoreG = Ui:CreateSection("Lore Game")
-local AnCl = Ui:CreateSection("Anime Clicker")x
+local AnCl = Ui:CreateSection("Anime Clicker")
 local Misc = Ui:CreateSection("Misc")
 local Misc2= Ui:CreateSection("Misc2")
 Lib.prompt('ONI-HUB', 'Thank you for choosing us. Enjoy!')
